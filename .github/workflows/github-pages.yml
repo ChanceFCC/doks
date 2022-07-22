@@ -19,12 +19,7 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.90.0'
-
-      - name: Install dependencies
+     - name: Install dependencies
         run: npm install
 
       - name: Check for linting errors
